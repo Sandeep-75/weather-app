@@ -12,6 +12,7 @@ getInput.addEventListener("keyup",(e)=>{
     weatherData.then((data)=>{
       showTemp(data)
       getDate()
+      
     })
     }
     
@@ -33,7 +34,6 @@ function showTemp(tempdata){
   let min = document.querySelector(".min")
   let max = document.querySelector(".max")
 
-
   temp.innerHTML = tempdata.main.temp;
   city.innerHTML = tempdata.name;
   country.innerHTML = tempdata.sys.country;
@@ -41,9 +41,8 @@ function showTemp(tempdata){
   humidity.textContent = tempdata.main.humidity;
   max.textContent = tempdata.main.temp_max;
   min.textContent = tempdata.main.temp_min;
-
+  backgroundChange(getStatus.textContent)
 }
-
 function getDate(){
   let showDate = document.querySelector(".date");
   let arr = ["January", "February", "March","April","May","June","July","August","September","October","November","December"]
@@ -55,4 +54,36 @@ function getDate(){
   
 }
 
+// change background 
+let getStatus = document.querySelector(".status")
 
+function backgroundChange(status){
+ switch(status){
+   case (status = "broken clouds"): document.body.style.backgroundImage = "url('https://images.wallpaperscraft.com/image/clouds_sky_overcast_114918_1280x720.jpg')";
+   break;
+   case (status = "few clouds"): document.body.style.backgroundImage = "url('https://images.wallpaperscraft.com/image/sky_clouds_blue_white_clear_1273_1280x720.jpg')";
+   break;
+   case (status = "overcast clouds"):document.body.style.backgroundImage = "url('https://images.wallpaperscraft.com/image/clouds_cloudy_storm_172293_3840x2400.jpg')"
+   break;
+   case (status = "clear sky"):document.body.style.backgroundImage = "url('https://images.wallpaperscraft.com/image/clouds_sky_beautiful_174226_1600x1200.jpg')"
+   break;
+   case (status = "light rain"):document.body.style.backgroundImage = "url('https://images.wallpaperscraft.com/image/drops_rain_glass_water_clouds_83382_1600x1200.jpg')"
+   break;
+   case (status = "heavy intensity rain"):document.body.style.backgroundImage = "url('https://images.wallpaperscraft.com/image/lightning_sky_clouds_178365_3840x2400.jpg')"
+   break;
+ }
+}
+
+
+
+
+
+// if (getStatus == "scattered clouds"){
+//   document.body.style.backgroundImage = "url('https://www.princeton.edu/sites/default/files/styles/half_2x/public/images/2018/01/clouds-19.jpg?itok=Qfa5j6NW')";
+//   if (getStatus == "few clouds"){
+//     document.body.style.backgroundImage = "url('https://cdn1.cloudpro.co.uk/sites/cloudprod7/files/2018/07/cloud.jpg')"
+//     if (getStatus == "clear sky"){
+//       document.body.style.backgroundImage = "url('https://www.metoffice.gov.uk/binaries/content/gallery/metofficegovuk/hero-images/weather/cloud/altocumulus.jpg')"
+//       if (getStatus == "brocken clouds"){
+//         document.body.style.backgroundImage = "url('https://cdn.wallpapersafari.com/84/18/FRml8X.jpg')"
+      

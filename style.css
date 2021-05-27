@@ -5,7 +5,7 @@
 }
 body {
   background-image: url(./images/sky.jpg);
-  background-size: inherit;
+  background-size: cover;
   background-position: revert;
   background-repeat: no-repeat;
   height: 100vh;
