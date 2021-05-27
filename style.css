@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(./images/sky.jpg);
+  background-size: inherit;
+  background-position: revert;
+  background-repeat: no-repeat;
+  height: 100vh;
+  overflow: hidden;
+}
+.main-app {
+  width: 30%;
+  margin: 100px auto;
+  text-align: center;
+  background-color: rgba(240, 245, 255, 0.6);
+  padding: 22px;
+  border-radius: 8px;
+}
+
+.searchInput input {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+  border: none;
+  outline: none;
+  color: #582233;
+  border-radius: 5px;
+  font-size: 18px;
+  text-align: center;
+  padding: 10px 10px;
+}
+.weather-body {
+  color: #582233;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.6);
+  height: 50vh;
+  margin-top: 15px;
+}
+.temp,
+.c {
+  font-size: 40px;
+  font-weight: 700;
+  margin: 4px 0;
+  text-shadow: 2px 4px rgb(0 0 0 / 30%);
+}
+.img img {
+  width: 28%;
+  margin-bottom: 0px;
+}
+
+.status,
+.city,
+.date,
+.country {
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 2px;
+}
