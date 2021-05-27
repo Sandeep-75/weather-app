@@ -59,3 +59,8 @@ body {
   font-weight: 600;
   margin-top: 2px;
 }
+@media (max-width: 576px) {
+  .main-app {
+    width: 80%;
+  }
+}

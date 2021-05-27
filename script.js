@@ -19,9 +19,7 @@ getInput.addEventListener("keyup",(e)=>{
 
 function getWetherData(getInput){
   let res = fetch(`${weatherApi.url}q=${getInput}&appid=${weatherApi.key}&units=metric`)
-  .then((response)=>{
-   return response.json()
-  })
+  .then((response)=>{return response.json()})
   return res;
 }
 
