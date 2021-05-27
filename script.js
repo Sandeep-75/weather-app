@@ -29,12 +29,18 @@ function showTemp(tempdata){
   let country = document.querySelector(".country");
   let status = document.querySelector(".status");
   let img = document.querySelector(".img");
+  let humidity = document.querySelector(".humidity")
+  let min = document.querySelector(".min")
+  let max = document.querySelector(".max")
+
 
   temp.innerHTML = tempdata.main.temp;
   city.innerHTML = tempdata.name;
   country.innerHTML = tempdata.sys.country;
   status.innerHTML = tempdata.weather[0].description;
-  
+  humidity.textContent = tempdata.main.humidity;
+  max.textContent = tempdata.main.temp_max;
+  min.textContent = tempdata.main.temp_min;
 
 }
 
