@@ -59,13 +59,8 @@ body {
   font-weight: 600;
   margin-top: 2px;
 }
-@media (max-width: 576px) {
+@media (min-width: 278px) and (max-width: 576px) {
   .main-app {
     width: 80%;
-    margin: 100px auto;
-    text-align: center;
-    background-color: rgba(240, 245, 255, 0.6);
-    padding: 22px;
-    border-radius: 8px;
   }
 }
