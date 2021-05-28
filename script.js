@@ -78,12 +78,4 @@ function backgroundChange(status){
 
 
 
-// if (getStatus == "scattered clouds"){
-//   document.body.style.backgroundImage = "url('https://www.princeton.edu/sites/default/files/styles/half_2x/public/images/2018/01/clouds-19.jpg?itok=Qfa5j6NW')";
-//   if (getStatus == "few clouds"){
-//     document.body.style.backgroundImage = "url('https://cdn1.cloudpro.co.uk/sites/cloudprod7/files/2018/07/cloud.jpg')"
-//     if (getStatus == "clear sky"){
-//       document.body.style.backgroundImage = "url('https://www.metoffice.gov.uk/binaries/content/gallery/metofficegovuk/hero-images/weather/cloud/altocumulus.jpg')"
-//       if (getStatus == "brocken clouds"){
-//         document.body.style.backgroundImage = "url('https://cdn.wallpapersafari.com/84/18/FRml8X.jpg')"
       
